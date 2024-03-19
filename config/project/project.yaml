@@ -1,0 +1,48 @@
+dateModified: 1710850411
+email:
+  fromEmail: kristian.palshaugen@gmail.com
+  fromName: Augousotos
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  exterior:
+    hasUrls: true
+    name: Exterior
+    settings:
+      path: '@webroot/img/exterior'
+    type: craft\fs\Local
+    url: /img/exterior
+meta:
+  __names__:
+    3dbca972-a04a-4ccf-8681-2bbb1f4cf377: Square # Square
+    04c9df16-8335-491a-986f-c92810b5ed69: Augousotos # Augousotos
+    4ccb229e-3c29-4822-9a96-4eb4344413cd: Exterior # Exterior
+    7a4bc561-3094-4b7b-aebc-e40255bff690: Simple # Simple
+    179df083-7522-47ea-b89b-b7a36b0014a8: 'Augousotos (GR)' # Augousotos (GR)
+    458ab414-e274-4ddd-9418-b38f25987e7c: 'Augoustos (EN)' # Augoustos (EN)
+    a06f5114-8c1f-4ffe-bc09-19aa80b5b999: 'Public Schema' # Public Schema
+    a2c2cb9a-3a8d-4c1d-90b0-1edbdd4f2766: Common # Common
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Augousotos
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

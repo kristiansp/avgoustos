@@ -1,0 +1,9 @@
+baseUrl: '@web/en'
+enabled: '1'
+handle: en
+hasUrls: true
+language: en
+name: 'Augoustos (EN)'
+primary: false
+siteGroup: 04c9df16-8335-491a-986f-c92810b5ed69 # Augousotos
+sortOrder: 2

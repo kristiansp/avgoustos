@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Augoutos Village</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+     {{ craft.vite.script("src/js/app.js") }}
+
+     {# Move this somewhere else eventually #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body class="ltr font-serif bg-warm-sun">
+<header class="flex justify-between items-center h-12 px-4 text-black">
+    <div class="material-symbols-outlined text-white">menu</div>
+    {{ svg('@webroot/static/img/avgoustos-logo.svg')|attr({
+        class: 'w-1/2',
+    }) }}
+    <div id="temp" class="text-white">17&deg;</div>
+</header>
+<section>
+    <div class="max-w-72 px-6 pt-60 pb-6 text-xl font-semibold">
+        Kythera’s most remarkable beaches lie around our retreat
+    </div>
+    {% set images = craft.assets().volume('exterior').all() %}
+    <div id="frontpage-carousel" class="embla overflow-hidden">
+        <div class="embla__container flex">
+            {% for image in images %}
+                <div class="embla__slide flex-grow-0 flex-shrink-0 basis-11/12 mx-0.5">
+                    <img src="{{image.getUrl('square')}}" width="{{image.getWidth('square')}}" height="{{image.getHeight('square')}}" />
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="relative bg-white text-red-soil px-8 py-8 text-lg">
+    Τα Βιαράδικα είναι από τα
+γραφικότερα χωριά των Κυθήρων
+με θέα σε μια καταπράσινη εύφορη
+κοιλάδα που χωρίζει το χωριό από
+τα Μητάτα απέναντι. Η περιοχή της
+βρύσης του χωριού είναι μια όαση με
+τα τρεχούμενα νερά, τα πλατάνια, τα
+περιβόλια, τις κερασιές και τα τζάνερα.
+</section>
+
+{% set imageUrl = images[5].getUrl('square') %}
+<section class="relative h-[100dvh] text-white bg-scroll bg-cover" style="background-image: url('{{imageUrl}}')">
+    <div class="pt-60 px-6 text-3xl shadow">
+        Book a tiny village just for you and your friends
+    </div>
+</section>
+</body>
+</html>

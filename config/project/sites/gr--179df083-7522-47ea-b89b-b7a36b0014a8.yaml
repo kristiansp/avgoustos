@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: gr
+hasUrls: true
+language: el-GR
+name: 'Augousotos (GR)'
+primary: true
+siteGroup: 04c9df16-8335-491a-986f-c92810b5ed69 # Augousotos
+sortOrder: 1

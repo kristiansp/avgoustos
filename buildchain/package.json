@@ -1,0 +1,85 @@
+{
+    "name": "buildchain",
+    "version": "1.0.0",
+    "description": "Website for Augoustos Village",
+    "keywords": [
+        "Example",
+        "Keywords"
+    ],
+    "homepage": "https://github.com/example-developer/example-project",
+    "bugs": {
+        "email": "kristian.palshaugen@gmail.com",
+        "url": "https://github.com/example-developer/example-project/issues"
+    },
+    "license": "SEE LICENSE IN LICENSE.md",
+    "author": {
+        "name": "Kris",
+        "email": "kristian.palshaugen@gmail.com",
+        "url": "https://augoutos-village.gr"
+    },
+    "browser": "/web/index.php",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/example-developer/example-project.git"
+    },
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "browserslist": {
+        "production": [
+            "> 1%",
+            "last 2 versions",
+            "Firefox ESR"
+        ],
+        "legacyBrowsers": [
+            "> 1%",
+            "last 2 versions",
+            "Firefox ESR"
+        ],
+        "modernBrowsers": [
+            "last 2 Chrome versions",
+            "not Chrome < 60",
+            "last 2 Safari versions",
+            "not Safari < 10.1",
+            "last 2 iOS versions",
+            "not iOS < 10.3",
+            "last 2 Firefox versions",
+            "not Firefox < 54",
+            "last 2 Edge versions",
+            "not Edge < 15"
+        ]
+    },
+    "devDependencies": {
+        "@types/tingle.js": "^0.13.2",
+        "@vitejs/plugin-legacy": "^5.0.0",
+        "autoprefixer": "^10.4.7",
+        "critical": "^7.0.0",
+        "postcss": "^8.4.13",
+        "postcss-import": "^16.0.0",
+        "postcss-preset-env": "^9.0.0",
+        "prettier": "^3.2.5",
+        "prettier-plugin-tailwindcss": "^0.5.11",
+        "rollup-plugin-critical": "^1.0.12",
+        "stylelint": "^16.0.0",
+        "stylelint-config-recommended": "^14.0.0",
+        "tailwindcss": "^3.0.24",
+        "tailwindcss-important": "^1.0.0",
+        "terser": "^5.27.1",
+        "vite": "^5.0.0",
+        "vite-plugin-compression": "^0.5.0",
+        "vite-plugin-restart": "^0.4.0"
+    },
+    "dependencies": {
+        "alpinejs": "^3.13.7",
+        "embla-carousel": "^8.0.0-rc15",
+        "embla-carousel-auto-height": "^8.0.0-rc15",
+        "tingle.js": "^0.16.0"
+    }
+}

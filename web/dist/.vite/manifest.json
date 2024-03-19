@@ -1,0 +1,20 @@
+{
+  "src/js/app-legacy.js": {
+    "file": "assets/app-legacy-CHLXBLd4.js",
+    "src": "src/js/app-legacy.js",
+    "isEntry": true
+  },
+  "src/js/app.js": {
+    "file": "assets/app-DYN0TR9E.js",
+    "src": "src/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-C5sP9x2V.css"
+    ]
+  },
+  "vite/legacy-polyfills-legacy": {
+    "file": "assets/polyfills-legacy-B1Sw4taE.js",
+    "src": "vite/legacy-polyfills-legacy",
+    "isEntry": true
+  }
+}
